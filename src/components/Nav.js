@@ -1,14 +1,16 @@
 import React from 'react'
 
 
-const Nav = () => {
+const Nav = ({setSearch,search}) => {
+    const handlesearch=(e)=>setSearch(e.target.value)
+  
     return (
         <div className="main-nav">
             <div className="logo">
                 <h2>MovieApp</h2>
             </div>
             <div>
-            <input className="search" type="text" placeholder="Search for a specific movie.."></input>
+            <input className="search" type="text" placeholder="Search for a specific movie.." value={search} onChange={handlesearch}></input>
             </div>
             <div className="dv-li">
                 <ul className="main-li">
