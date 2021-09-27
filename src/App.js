@@ -2,7 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import Nav from './components/Nav';
 import MovieList from './components/MovieList';
-import Sidenavbar from './components/Sidenavbar'
+import Sidenavbar from './components/Sidenavbar';
 
 
 

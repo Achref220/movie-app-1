@@ -1,4 +1,5 @@
 import React from 'react'
+import StarRating from './StarRating';
 
 function MovieList(props) {
     const Filter= props.movies.filter((movie,key)=>(
@@ -7,9 +8,8 @@ function MovieList(props) {
     return (
         <>
         {Filter.map((movie) => <div className="image-container d-flex justify-content-start m-3">
-            <img style={{width:"200px", height:"300px"}} src={movie.poster} alt="movie1" ></img>
-            <div className="title-img">{movie.title}</div>
-            <div className="rating">{movie.rating}</div>
+            <img style={{width:"150px", height:"180px"}} src={movie.poster} alt="movie1" ></img>
+            <b><h6 className="title-img">{movie.title}<StarRating /></h6></b>
             </div>
         )} 
     </>

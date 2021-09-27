@@ -1,6 +1,8 @@
-body{
-  margin: 0;
-  padding: 0;
+html, body {
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  overflow-y:auto;
 }
 
 ::-webkit-scrollbar {
@@ -29,12 +31,15 @@ body{
 .logo{
   position: relative;
   bottom: 10px;
-  left: 10px;
+  left: 50px;
   top: 9px;
   color: aliceblue;
 }
 .logo h2{
   font-size: 26px;
+}
+.logo span{
+  color: gold;
 }
 .main-li li{
   color: aliceblue;
@@ -59,27 +64,40 @@ body{
 }
 .search{
   width: 400px;
-  height: 20px;
+  height: 30px;
   position: relative;
   left: 50px;
-  top: 15px;
+  top: 12px;
   outline:none;
+  border-radius: 15px;
+  background-color: grey;
+}
+::placeholder{
+  color: rgb(202, 202, 202);
+  position: relative;
+  left: 90px;
 }
 .container-fluid{
   background-color: grey;
   display: flex;
-  flex-wrap: nowrap;
-
+  flex-wrap: wrap;
+  margin-left: 150px;
 }
 
 .title-img{
   position: relative;
-  top: 300px;
-  right: 130px;
+  top: 200px;
+  right: 135px;
+  color: aliceblue;
 }
-.image-container{
-
-  transition: transform 0.2s;
+.image-container {
+  position: relative;
+  transition: transform 0.5s;
+  height: 50px;
+  padding-left: 10px;
+}
+.image-container img {
+  border-radius: 20px;
 }
 .image-container:hover{
   cursor: pointer;
@@ -88,18 +106,7 @@ body{
 .image-container:hover .overlay{
   opacity: 1;
 }
-.overlay {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.8);
-  width: 200px;
-  height: 300px;
-  transition: 0.5s ease;
-  opacity: 0;
-  bottom: 0;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
+
 body{
   background-color: grey;
 }
@@ -112,9 +119,29 @@ body{
 .first-list{
   background-color: rgb(32, 31, 31);
   width: 250px;
-  height: 600px;
+  height: 100vh;
   color: aliceblue;
 }
+.first-list h4{
+  color: aqua;
+}
+.ul1, .ul2{
+  margin-left: 20px;
+  position: relative;
+  top: 120px;
+}
+.ul1, .ul2 li{
+  list-style: none;
+  cursor: pointer;
+}
+input[type="radio"] {
+  display: none;
+}
+.star{
+  cursor: pointer;
+  transition: color 200ms;
+}
+
 
 
 
