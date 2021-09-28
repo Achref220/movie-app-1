@@ -10,7 +10,7 @@ import Sidenavbar from './components/Sidenavbar';
 function App() {
   const movies = ([
     {
-      title: 'star wars',
+      title: 'Army of the Dead',
       poster: 'https://static.metacritic.com/images/products/movies/2/ff18a25678e24961eee663ae7cb8ca42.jpg'
     },
     {
