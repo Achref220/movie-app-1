@@ -69,7 +69,6 @@ html, body {
   left: 50px;
   top: 12px;
   outline:none;
-  border-radius: 10px;
   background-color: grey;
 }
 ::placeholder{
