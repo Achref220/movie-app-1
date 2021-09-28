@@ -39,7 +39,7 @@ html, body {
   font-size: 26px;
 }
 .logo span{
-  color: gold;
+  color: rgb(23, 114, 189);
 }
 .main-li li{
   color: aliceblue;
@@ -69,7 +69,7 @@ html, body {
   left: 50px;
   top: 12px;
   outline:none;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: grey;
 }
 ::placeholder{
@@ -78,10 +78,11 @@ html, body {
   left: 90px;
 }
 .container-fluid{
-  background-color: grey;
+  background-image: url(https://cutewallpaper.org/21/movies-background/Movies123-is-a-free-movie-site-for-streaming-and-watching-.jpg);
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 150px;
+  
 }
 
 .title-img{
@@ -123,7 +124,7 @@ body{
   color: aliceblue;
 }
 .first-list h4{
-  color: aqua;
+  color: rgb(23, 114, 189);
 }
 .ul1, .ul2{
   margin-left: 20px;
@@ -133,6 +134,12 @@ body{
 .ul1, .ul2 li{
   list-style: none;
   cursor: pointer;
+}
+.ul1 li:hover{
+  letter-spacing: 2px;
+}
+.ul2 li:hover{
+  letter-spacing: 2px;
 }
 input[type="radio"] {
   display: none;

@@ -7,10 +7,10 @@ const Nav = ({setSearch,search}) => {
     return (
         <div className="main-nav">
             <div className="logo">
-                <h2>Movie<span>App</span></h2>
+                <h2>Movie<span>App</span>🎬</h2>
             </div>
             <div>
-            <input className="search" type="text" placeholder="Search for a specific movie.." value={search} onChange={handlesearch}></input>
+            <input className="search" type="text" placeholder="Search for a specific movie..🔍" value={search} onChange={handlesearch}></input>
             </div>
             <div className="dv-li">
                 <ul className="main-li">

@@ -8,7 +8,7 @@ function MovieList(props) {
     return (
         <>
         {Filter.map((movie) => <div className="image-container d-flex justify-content-start m-3">
-            <img style={{width:"150px", height:"180px"}} src={movie.poster} alt="movie1" ></img>
+            <img style={{width:"150px", height:"200px"}} src={movie.poster} alt="movie1" ></img>
             <b><h6 className="title-img">{movie.title}<StarRating /></h6></b>
             </div>
         )} 

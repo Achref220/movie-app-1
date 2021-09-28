@@ -14,7 +14,7 @@ const Sidenavbar = () => {
                     <li>more...</li>
                 </ul>
                 <ul className="ul2">
-                    <h4>Language</h4>
+                    <h4>Languages <span style={{fontSize:"15px"}}>🌍</span></h4>
                     <li>English</li>
                     <li>French</li>
                     <li>Russian</li>
