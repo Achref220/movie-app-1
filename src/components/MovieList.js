@@ -1,18 +1,17 @@
 import React from 'react'
-import StarRating from './StarRating';
+import MovieCard from './MovieCard';
+
 
 function MovieList(props) {
-    const Filter= props.movies.filter((movie,key)=>(
-        movie.title.includes(props.search))
-      );
+    const Filter= props.movies.filter((movie, key)=>(
+        movie.title.toLowerCase().includes(props.search.toLowerCase())&&(movie.rate) >= props.rate)
+    );
     return (
         <>
-        {Filter.map((movie) => <div className="image-container d-flex justify-content-start m-3">
-            <img style={{width:"150px", height:"200px"}} src={movie.poster} alt="movie1" ></img>
-            <b><h6 className="title-img">{movie.title}<StarRating /></h6></b>
-            </div>
+        {Filter.map((movie) => 
+            <MovieCard movie={movie} />
         )} 
-    </>
+        </>
     )
 }
 
