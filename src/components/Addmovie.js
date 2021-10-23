@@ -17,7 +17,9 @@ const Addmovie = ({setMovies}) => {
 
     const addCard = e => {
         e.preventDefault();
-        setMovies(prevMovies => [...prevMovies, {title: title, poster: poster}]);
+        const newMovie= {title: title, 
+            poster: poster}
+        setMovies(prevMovies => [...prevMovies, newMovie]);
     };
     
     return (
