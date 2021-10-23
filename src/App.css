@@ -64,10 +64,22 @@ html, body {
   width: 400px;
   height: 30px;
   position: relative;
-  left: 50px;
-  top: 12px;
-  border-radius: 10px;
-  background-color: rgb(159, 123, 167);
+  top: 13px;
+  left: 40px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.search:focus{
+  background-color: rgba(255, 255, 255, 0.75);
 }
 ::placeholder{
   color: rgb(65, 60, 60);
@@ -84,8 +96,8 @@ html, body {
 
 .title-img{
   position: relative;
-  top: 200px;
-  right: 135px;
+  top: 220px;
+  right: 125px;
   color: aliceblue;
   text-decoration: none;
 }
@@ -98,11 +110,13 @@ html, body {
 }
 .image-container img {
   border-radius: 10px;
+  box-shadow: 10px 10px 8px #000000;
 }
 .image-container:hover{
   cursor: pointer;
   transform: scale(1.1);
 }
+
 .image-container:hover .overlay{
   opacity: 1;
 }
@@ -156,7 +170,7 @@ input[type="radio"] {
 }
 .stars1{
   position: relative;
-  top: 215px;
+  top: 200px;
   left: 110px;
 }
 .toggle15{
@@ -190,7 +204,7 @@ input[type="radio"] {
   bottom: 100px;
 }
 .btn-primary{
-  background-color: rgb(98, 25, 167) !important;
+  background-color: rgb(79, 56, 100) !important;
   border-color: rgb(185, 114, 252) !important;
 }
 
@@ -214,6 +228,7 @@ input[type="radio"] {
   align-items: center;
   position: absolute;
   right: 150px;
+  top: 100px;
 }
 .trailer-main h1{
   color: wheat;
@@ -224,6 +239,9 @@ input[type="radio"] {
   color: aliceblue;
   margin-top: 10px;
   width: 800px;
+}
+.trailer-main iframe{
+  box-shadow: 10px 10px 8px #000000;
 }
 .link-1{
   text-decoration: none;

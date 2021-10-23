@@ -37,7 +37,7 @@ function App() {
       id: 3
     },
     {
-      title: 'Oxygen',
+      title: "Oxygen",
       poster: 'https://m.media-amazon.com/images/M/MV5BMWQ3N2EzNjYtMzgwYS00YjdmLThmOTUtMzc4NDUxZjZkY2RhXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg',
       rate:4,
       trailer: "https://www.youtube.com/embed/8IqXgZd-P98",

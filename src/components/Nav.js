@@ -13,7 +13,7 @@ const Nav = ({setSearch,search,setRate,rate}) => {
             </div>
             <div>
             <input className="search" type="text" placeholder="Search for a specific movie..🔍" value={search} onChange={handlesearch}></input>
-            <h4 className="rate">movie rating ✰</h4>
+            <h4 className="rate">movie rating ✯</h4>
             <div className="rating"><StarRatingComponent value={rate}
                 onStarClick={(nextValue, prevValue)=>{
                 setRate(nextValue,prevValue)

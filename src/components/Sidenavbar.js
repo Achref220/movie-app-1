@@ -6,7 +6,7 @@ const Sidenavbar = ({setMovies}) => {
         <div>
             <div className="first-list">
                 <ul className="ul1">
-                    <h4>Movie type</h4>
+                    <h4>Movie type <span style={{fontSize:"17px"}}>🎥</span></h4>
                     <li>Action</li>
                     <li>Horor</li>
                     <li>Comedy</li>
@@ -15,7 +15,7 @@ const Sidenavbar = ({setMovies}) => {
                     <li>more...</li>
                 </ul>
                 <ul className="ul2">
-                    <h4>Languages <span style={{fontSize:"17px"}}>🌍</span></h4>
+                    <h4>Languages <span style={{fontSize:"17px"}}>&#160;🌐</span></h4>
                     <li>English</li>
                     <li>French</li>
                     <li>Russian</li>
