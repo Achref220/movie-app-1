@@ -11,14 +11,14 @@ import Trailer from './components/Trailer';
 
 
 function App() {
-  let [movies, setMovies] = useState([
+  let movies = [
     {
       title: 'Army of the Dead',
       poster: 'https://static.metacritic.com/images/products/movies/2/ff18a25678e24961eee663ae7cb8ca42.jpg',
       rate:2,
       trailer: "https://www.youtube.com/embed/tI1JGPhYBS8", 
       description: "Description : Following a zombie outbreak in Las Vegas, a group of mercenaries take the ultimate gamble, venturing into the quarantine zone to pull off the greatest heist ever attempted.",
-      id: 1
+      id: 2
     },
     {
       title: 'The Last Mercenary',
@@ -26,7 +26,7 @@ function App() {
       rate:3,
       trailer: "https://www.youtube.com/embed/G4_ULVw5L04",
       description: "Description : A mysterious former secret service agent must urgently return to France when his estranged son is falsely accused of arms and drug trafficking by the government, following a blunder by an overzealous bureaucrat and a mafia operation.",
-      id: 2
+      id: 3
     },
     {
       title: 'Blood Red Sky',
@@ -34,7 +34,7 @@ function App() {
       rate:5,
       trailer: "https://www.youtube.com/embed/U8M_1eyrBtQ", 
       description: "Description : When a group of terrorists hijacks an overnight transatlantic flight, a mysteriously ill woman must unleash a monstrous secret to protect her young son",
-      id: 3
+      id: 5
     },
     {
       title: "Oxygen",
@@ -53,10 +53,15 @@ function App() {
       id: 5
     },
     
-  ]);
+  ];
 
   const [search, setSearch] = useState("");
   const [rate, setRate] = useState(false);
+  const [movieList, setMovieList] = useState(movies);
+
+  const addMovie = (newmovie) => {
+    setMovieList([...movieList, newmovie]);
+  };
   
 
 
@@ -68,17 +73,17 @@ function App() {
         <Nav search={search}  rate={rate}  setSearch={setSearch} setRate={setRate}/>
         <Switch>
           <div className="main70">
-            <Sidenavbar  setMovies={setMovies}/>
+            <Sidenavbar  addMovies={addMovie}/>
               <div className="container-fluid">
               <Route exact path="/">
                 <MovieList className="cards"
-                  movies= {movies} 
+                  movies= {movieList} 
                   search={search}
                   rate={rate}
                 />
               </Route>
               <Route path="/Trailer/:id">
-              <Trailer movies={movies} />
+              <Trailer movies={movieList} />
               </Route>
               </div>
           </div>

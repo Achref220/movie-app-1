@@ -12,7 +12,7 @@ function MovieCard({ movie }) {
                 <div>
                     <StarRatingComponent className="stars1" value={movie.rate} editing={false} />
                 </div>
-                <img style={{width:"150px", height:"200px"}} src={movie.poster} alt="movie1" ></img>
+                <img style={{width:"150px", height:"200px"}} src={movie.poster} alt={movie.title}></img>
                 <b><h6 className="title-img">{movie.title}</h6></b>
             </div>
         </Link>

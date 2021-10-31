@@ -90,8 +90,10 @@ html, body {
   background-image: url(https://wallpaperaccess.com/full/188825.jpg);
   background-size: cover;
   display: flex;
-  flex-wrap: wrap-reverse;
-  
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  flex-direction:row;
 }
 
 .title-img{
@@ -105,7 +107,6 @@ html, body {
   display: flex;
   transition: transform 0.5s;
   height: 50px;
-  margin-left: 20px;
   margin-top: 50px;
 }
 .image-container img {
@@ -248,6 +249,58 @@ input[type="radio"] {
 }
 .link-2{
   text-decoration: none;
+}
+.addform{
+  margin-top: 80px;
+  display: flex;
+  position: relative;
+  right: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.addform input{
+  margin-bottom: 20px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.addform textarea{
+  position: relative;
+  right: 60px;
+  margin-bottom: 20px;
+  appearance: none;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 230px;
+  border: none;
+  outline: none;
+}
+
+.addform label{
+  position: relative;
+  right: 55px;
+  margin-bottom: 5px;
+}
+
+.ratefilm{
+  width: 50px;
+}
+
+.button55{
+  appearance: none;
+  background: none;
+  background-color: rgba(187, 148, 148, 0.5);
+  position: relative;
+  right: 60px;
+  color: bisque;
 }
 
 
