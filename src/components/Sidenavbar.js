@@ -1,7 +1,7 @@
 import React from 'react'
 import Addmovie from './Addmovie'
 
-const Sidenavbar = ({setMovies}) => {
+const Sidenavbar = ({ addMovies }) => {
     return (
         <div>
             <div className="first-list">
@@ -23,7 +23,7 @@ const Sidenavbar = ({setMovies}) => {
                     <li>more...</li>
                 </ul>
                 <div className="toggle15">
-                <Addmovie  setMovies={setMovies}/>
+                <Addmovie  addMovies={addMovies}/>
                 </div>
             </div>
         </div>

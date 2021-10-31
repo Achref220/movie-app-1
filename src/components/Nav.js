@@ -22,7 +22,7 @@ const Nav = ({setSearch,search,setRate,rate}) => {
             </div>
             <div className="dv-li">
                 <ul className="main-li">
-                    <Link className="link-1" exact to="/"><li><a href=""><b>home</ b></a></li></Link>
+                    <Link className="link-1" exact to="/"><li><a href="#"><b>home</ b></a></li></Link>
                     <li><a href=""><b>Movie list</b></a></li>
                     <li><a href=""><b>Contact</b></a></li>
                 </ul>
